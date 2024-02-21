@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main class="m-4 p-4 bg-slate-50">
+        <section class="flex lg:flex-row sm: flex-col gap-4">
+            <div class=" basis-9/12">
+                <!-- This is Kitchenware Block  -->
+                <div>
+                    <h1 class="text-4xl text-red-600 mb-4 font-bold">Kitchenware</h1>
+                    <div class="grid lg:grid-cols-3 sm:grid-cols-1 gap-3">
+                        <div onclick="kitchenwareCardOne()" class="card w-70 bg-base-100 shadow-xl p-3">
+                            <figure><img src="./images/prod1.png" alt="Shoes" /></figure>
+                            <div class="card-body items-center">
+                                <h2 id="cardOneTitle" class="card-title ">K. Accessories</h2>
+                                <p class="text-center text-neutral-50"><span id="cardOnePrice">39.00</span> Tk.</p>
+                            </div>
+                        </div>
+
+                        <div onclick="kitchenwareCardtwo()" class="card w-70 bg-base-100 shadow-xl p-3">
+                            <figure><img src="./images/prod2.png" alt="Shoes" /></figure>
+                            <div class="card-body items-center">
+                                <h2 id="cardTwoTitle" class="card-title text-center">K. Accessories</h2>
+                                <p class="text-center text-neutral-50"><span id="cardTwoPrice">25.00</span> Tk.</p>
+                            </div>
+                        </div>
+
+                        <div onclick="kitchenwareCardthree()" class="card w-70 bg-base-100 shadow-xl p-3">
+                            <figure><img src="./images/prod3.png" alt="Shoes" /></figure>
+                            <div class="card-body items-center">
+                                <h2 class="card-title text-center" id="cardThreeTitle">Home Cooker</h2>
+                                <p class="text-center text-neutral-50"><span id="cardThreePrice">49.00</span> Tk.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- This is Sportswear Block  -->
+                <div class="mt-8">
+                    <h1 class="text-4xl text-red-600 mb-4 font-bold">Sportswear</h1>
+                    <div class="grid lg:grid-cols-3 sm:grid-cols-1 gap-3">
+                        <div onclick="sportswearFristCard()" class="card w-70 bg-base-100 shadow-xl p-3">
+                            <figure><img src="./images/prod4.png" alt="Shoes" /></figure>
+                            <div class="card-body items-center">
+                                <h2 class="card-title " id="sportswearFristCardTitle">Sports Back Cap</h2>
+                                <p class="text-center text-neutral-50"><span id="sportswearFristCardPrice">49.00</span>
+                                    Tk.</p>
+                            </div>
+                        </div>
+                        <div onclick="sportswearTwoCard()" class="card w-70 bg-base-100 shadow-xl p-3">
+                            <figure><img src="./images/prod5.png" alt="Shoes" /></figure>
+                            <div class="card-body items-center">
+                                <h2 class="card-title text-center" id="sportswearTwoCardTitle">Full Jersey Set</h2>
+                                <p class="text-center text-neutral-50"><span id="cardtwocap">69.00</span> Tk.</p>
+                            </div>
+                        </div>
+                        <div onclick="sportswearThreeCard()" class="card w-70 bg-base-100 shadow-xl p-3">
+                            <figure><img src="./images/prod6.png" alt="Shoes" /></figure>
+                            <div class="card-body items-center">
+                                <h2 class="card-title text-center" id="sportswearThreeCardTitle">Sports cates</h2>
+                                <p class="text-center text-neutral-50"><span id="sportswearThreeCardPrice">159.00</span>
+                                    Tk.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- This is Furniture Block  -->
+                <div class="mt-8">
+                    <h1 class="text-4xl text-red-600 mb-4 font-bold">Furniture</h1>
+                    <div class="grid lg:grid-cols-3 sm:grid-cols-1 gap-3">
+                        <div onclick="furniturefristCard()" class="card w-70 bg-base-100 shadow-xl p-3">
+                            <figure><img src="./images/prod7.png" alt="Shoes" /></figure>
+                            <div class="card-body items-center">
+                                <h2 class="card-title" id="furniturefristCardTitle">Single Relax Chair</h2>
+                                <p class="text-center text-neutral-50"><span id="furniturefristCardPrice">185.00</span>
+                                    Tk.</p>
+                            </div>
+                        </div>
+                        <div onclick="furnituretwoCard()" class="card w-70 bg-base-100 shadow-xl p-3">
+                            <figure><img src="./images/prod8.png" alt="Shoes" /></figure>
+                            <div class="card-body items-center">
+                                <h2 class="card-title text-center" id="furnituretwoCardTitle">Children play</h2>
+                                <p class="text-center text-neutral-50"><span id="furnituretwoCardPriceOn">299.00</span>
+                                    Tk.</p>
+                            </div>
+                        </div>
+                        <div onclick="furniturethreeCard()" class="card w-70 bg-base-100 shadow-xl p-3">
+                            <figure><img src="./images/prod9.png" alt="Shoes" /></figure>
+                            <div class="card-body items-center">
+                                <h2 class="card-title text-center" id="furniturethreeCardTitle">Flexible Sofa</h2>
+                                <p class="text-center text-neutral-50"><span
+                                        id="furniturethreeCardPriceOn">339.00</span> Tk.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="basis-3/12">
+                <!-- This is Cupon Block  -->
+                <div class="items-center bg-slate-200 shadow-xl p-3 rounded w-100">
+                    <h2 class="text-2xl text-black font-bold mb-3">Have coupon?</h2>
+                    <input id="cuponText" type="text" placeholder="Cupon Code..." class="input w-6/12 max-w-xs" />
+                    <button onclick="applyCoupon()" id="coupon-button"
+                        class="btn btn-primary lg:w-5/12 sm:w-5/12 xl:w-5/12" disabled>Apply</button>
+                </div>
+
+                <!-- This is item Block   -->
+                <div class="w-100 mt-8 text-black font-medium bg-slate-200 shadow-xl p-3 rounded">
+                    <table class="table">
+                        <!-- head -->
+                        <thead class=" text-black font-medium text-sm">
+                            <tr>
+                                <th> Sl:</th>
+                                <th>Product Name</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <!-- row 1
+                            <tr>
+                                <th>1</th>
+                                <td>Cy Ganderton</td>
+                            </tr> -->
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <!-- This is Clacutalte Block -->
+                <div class="card w-100 bg-slate-200  text-black shadow-xl mt-7 ">
+                    <div class="card-body font-medium">
+                        <h2 class="card-title items-start font-bold">Your Payment And Discount</h2>
+                        <p>Total price: <span id="totalPrice" >00.00</span> Tk.</p>
+                        <p>Discount: <span id="discount">00.00</span> Tk.</p>
+                        <p>Total: <span id="total">00.00</span> Tk.</p>
+                        <div class="card-actions items-center">
+                            <button onclick="purchase()" id="purchase" class="btn btn-primary " disabled>Make Purchase</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="portal items-center fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-8 border border-gray-300 shadow-xl rounded-md hidden">
+            <!-- Add content for your portal here -->
+            <img src="./images/congo.png" alt="">
+            <h2 class="text-4xl font-bold mb-4">Congratulations</h2>
+            <p class="mb-4">Your Purchase the product.</p>
+            <button class="btn btn-primary items-center">
+               <a href="index.html">Go Home</a> 
+            </button>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
